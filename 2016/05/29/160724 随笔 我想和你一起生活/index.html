@@ -523,8 +523,7 @@
   
     <div class="comments" id="comments">
       
-        <div onclick="showGitment()" id="gitment-display-button">gitmentbutton</div>
-        <div id="gitment-container" style="display:none"></div>
+        <div id="gitment-container"></div>
       
     </div>
 
@@ -885,11 +884,7 @@
       }
 
       
-      function showGitment(){
-        document.getElementById("gitment-display-button").style.display = "none";
-        document.getElementById("gitment-container").style.display = "block";
-        renderGitment();
-      }
+      renderGitment();
       
       </script>
     
@@ -1231,7 +1226,7 @@
   <div id="wpac-rating"></div>
 <script type="text/javascript">
 wpac_init = window.wpac_init || [];
-wpac_init.push({widget: 'Rating', id: 26353}); # your_id Ϊע�����ɵ�ID
+wpac_init.push({widget: 'Rating', id: 26353});
 (function() {
     if ('WIDGETPACK_LOADED' in window) return;
     WIDGETPACK_LOADED = true;
@@ -1242,7 +1237,6 @@ wpac_init.push({widget: 'Rating', id: 26353}); # your_id Ϊע�����ɵ�
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
 })();
 </script>
-
   
 
   
